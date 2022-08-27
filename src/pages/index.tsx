@@ -8,13 +8,13 @@ import styles from '../styles/Home.module.css';
 const Home: NextPage = () => {
   return (
     <Grid p="lg">
-      <Grid.Col span={2} style={{ minHeight: 80 }}>
+      <Grid.Col span={3} style={{ minHeight: 80 }}>
+        <MainCard /> {/*Initializing 3 initial cards*/}
+      </Grid.Col>
+      <Grid.Col span={3} style={{ minHeight: 80 }}>
         <MainCard />
       </Grid.Col>
-      <Grid.Col span={2} style={{ minHeight: 80 }}>
-        <MainCard />
-      </Grid.Col>
-      <Grid.Col span={2} style={{ minHeight: 80 }}>
+      <Grid.Col span={3} style={{ minHeight: 80 }}>
         <MainCard />
       </Grid.Col>
     </Grid>
