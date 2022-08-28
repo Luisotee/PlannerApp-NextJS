@@ -20,7 +20,7 @@ export function MainCard() {
           <Text align="center">{cardName}</Text>
         </Group>
         {mainCard.map((Itodo) => (
-          <TaskCard todo={Itodo} tasksHandler={tasksHandler} /> //How tf does he knows that ITodo = "É a" which was put in add-task?
+          <TaskCard todo={Itodo} tasksHandler={tasksHandler} /> //Puts the last data from the array into taskcard
         ))}
         <AddTaskCard tasksHandler={tasksHandler} />
       </Stack>

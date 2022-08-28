@@ -4,7 +4,7 @@ export interface Itodo {
   todo: string;
 }
 
-export interface AddTaskCardProps {             //In future will try to merge AddTaskCardProps with TaskCardProps
+export interface AddTaskCardProps {             
   tasksHandler: UseListStateHandlers<Itodo>;
 }
 
