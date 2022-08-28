@@ -2,7 +2,7 @@ import { Card, Group, Stack, Text } from '@mantine/core';
 import { useListState } from '@mantine/hooks';
 import { useState } from 'react';
 import { Itodo } from '../types';
-import { AddTaskCard } from './add-task';
+import { InputCard } from './input-card';
 import { TaskCard } from './task-card';
 
 export function MainCard() {
@@ -22,7 +22,7 @@ export function MainCard() {
         {mainCard.map((Itodo) => (
           <TaskCard todo={Itodo} tasksHandler={tasksHandler} /> //Puts the last data from the array into taskcard
         ))}
-        <AddTaskCard tasksHandler={tasksHandler} />
+        <InputCard tasksHandler={tasksHandler} />
       </Stack>
     </Card>
   );

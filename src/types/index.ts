@@ -12,3 +12,7 @@ export interface TaskCardProps {
   todo: Itodo
   tasksHandler: UseListStateHandlers<Itodo>;
 }
+
+export interface inputTask {
+  inputValue: string
+}
