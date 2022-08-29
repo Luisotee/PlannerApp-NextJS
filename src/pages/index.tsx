@@ -26,14 +26,14 @@ const Home: NextPage = () => {
         footer={<span>Footer</span>}
       >
         <Grid p="lg">
-          <Grid.Col span={2} style={{ minHeight: 80 }}>
-            <MainCard /> {/*Initializing 3 initial cards*/}
+          <Grid.Col span={3} style={{ minWidth: 80 }}>
+            <MainCard cardName={'To-Do'} /> {/*Initializing 3 initial cards*/}
           </Grid.Col>
-          <Grid.Col span={2} style={{ minHeight: 80 }}>
-            <MainCard />
+          <Grid.Col span={3} style={{ minHeight: 80 }}>
+            <MainCard cardName={'Doing'} />
           </Grid.Col>
-          <Grid.Col span={2} style={{ minHeight: 80 }}>
-            <MainCard />
+          <Grid.Col span={3} style={{ minHeight: 80 }}>
+            <MainCard cardName={'Done'} />
           </Grid.Col>
         </Grid>
       </AppShell>

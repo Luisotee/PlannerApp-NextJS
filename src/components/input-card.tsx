@@ -25,10 +25,11 @@ export function InputCard({ tasksHandler }: AddTaskCardProps) {
     <Card shadow="sm" p="xs" radius="md" withBorder>
       <Group position="apart" mt="xs" mb="xs">
         <TextInput
-          placeholder="Insert Task"
+          placeholder="Insert Task..."
           value={inputValue}
           onChange={setInputValue}
           onKeyDown={submitEnter}
+          style={{ width: 310 }}
           required
         ></TextInput>
         <Group position="apart">
