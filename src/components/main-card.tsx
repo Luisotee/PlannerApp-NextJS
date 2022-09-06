@@ -6,11 +6,11 @@ import {
   ReactFragment,
   ReactPortal,
 } from 'react';
-import { Itodo } from '../types';
+import { Itodo, MainCard } from '../types';
 import { InputCard } from './input-card';
 import { TaskCard } from './task-card';
 
-export function MainCard({ cardName }) {
+export function MainCard({ cardName }: MainCard) {
   const [mainCard, tasksHandler] = useListState<Itodo>(); //Initializing the state of a entire main card, together with the tasksHandler which serves to modify this list (ofc)
 
   function handleCardName() {

@@ -16,3 +16,7 @@ export interface TaskCardProps {
 export interface inputTask {
   inputValue: string
 }
+
+export interface MainCard {
+  cardName: string
+}

@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       >
         <Grid p="lg">
           <Grid.Col span={3} style={{ minWidth: 80 }}>
-            <MainCard cardName={'To-Do'} /> {/*Initializing 3 initial cards*/}
+            <MainCard cardName={'To-Do'} />
           </Grid.Col>
           <Grid.Col span={3} style={{ minHeight: 80 }}>
             <MainCard cardName={'Doing'} />
